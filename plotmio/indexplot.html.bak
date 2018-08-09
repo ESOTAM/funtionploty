@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <!-- Mirrored from www.chartjs.org/samples/latest/charts/line/basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Aug 2018 05:09:06 GMT --><!-- Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- /Added by HTTrack -->
+    <title>Line Chart</title>
+    <script src="Chart.bundle.js"></script>
+    <script src="utils.js"></script>
+      
+    <style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+
+
+  </head>
+  <body> <a href="index.html" title="tituloiruno" target="_top">GO BACK </a>
+  	
+ <script>
+
+
+getx1x2();
+function fidecua1(){
+
+	varidecua1=buscavalorid("idecua1");
+}
+
+
+function buscavalorid(stf){
+
+return	document.getElementById(String(stf)).value;
+}
+function getx1x2(){
+varx1=parseFloat(buscavalorid("idx1"));
+varx2=parseFloat(buscavalorid("idx2"));
+okecua1();
+}
+	</script><script src="ploty.js"></script> <div id="container"></div>  <script type="text/javascript" src="fooplot.js" charset="utf-8"></script>
+   
+
+
+<div id="div1"></div>
+  <div id="div2"></div>
+<script type="text/javascript">
+	function  otro(ax,ay){
+var vartrace1x=ax;
+var vartrace1y=ay;
+var trace1 = {
+  x: vartrace1x, 
+  y: vartrace1y, 
+  type: 'scatter'
+};
+var trace2 = {
+  x: [1, 2, 3, 4], 
+  y: [16, 5, 11, 9], 
+  type: 'scatter'
+};
+var data = [trace1, trace2];
+
+var layout1 = {
+  yaxis: {rangemode: 'tozero',
+          showline: true,
+          zeroline: true}
+};
+
+var layout2 = {
+  yaxis: {rangemode: 'tozero',
+          zeroline: true}
+};
+
+Plotly.newPlot('div1', data, layout1);
+
+
+}
+
+
+
+
+
+</script>
+
+   
+    desde x1<input id="idx1" value="-3" maxlength="100"  type="number" style="width: 30px;">  hasta x2<input id="idx2" value="3" maxlength="100" type="number" style="width: 30px;"><div><input type="text" id="idecua1" style="width: 90px;" value="sin(x)"><button id="btokec1" onclick="getx1x2()" style="width: 30px;">eq1</button>..<input type="text" id="idecua2" style="width: 90px;" value="x"><button id="btokec2" style="width: 30px;">eq2</button>..<input type="text" id="idecua3" style="width: 90px;" value="3"><button id="btfull" style="width: 30px;">eq3</button> <br><button id="btokec2" style="width: 30px;" onclick="dibujarec1()">draw</button>
+   
+  </body>
+  <!-- Mirrored from www.chartjs.org/samples/latest/charts/line/basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Aug 2018 05:09:06 GMT -->
+</html>
